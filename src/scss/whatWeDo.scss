@@ -1,0 +1,13 @@
+#whatWeDo__info {
+  display: grid;
+  grid-template: auto / 1fr 1fr;
+
+  #whatWeDo__info__blocksWrap > div {
+    border-top: 1px solid #999;
+    border-bottom: 1px solid #999;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 0;
+  }
+}

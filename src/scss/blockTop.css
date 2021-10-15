@@ -1,0 +1,27 @@
+.blockTop {
+  width: 60%;
+  margin: 0 20%;
+  padding: 90px 0 0 0;
+}
+.blockTop h4 {
+  font-style: italic;
+  font-size: 24px;
+  text-align: center;
+}
+.blockTop h3 {
+  font-size: 30px;
+  text-align: center;
+}
+.blockTop h5 {
+  font-size: 15px;
+  text-align: center;
+  color: #999;
+}
+.blockTop .line {
+  width: 60px;
+  height: 2px;
+  background-color: #f48b82;
+  margin: 40px calc(50% - 30px) 50px calc(50% - 30px);
+}
+
+/*# sourceMappingURL=blockTop.css.map */

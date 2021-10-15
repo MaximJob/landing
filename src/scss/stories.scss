@@ -1,0 +1,27 @@
+#stories {
+  #stories__info {
+    display: grid;
+    grid-template: auto / 1fr 1fr 1fr;
+    grid-gap: 10px;
+
+    > div {
+      > h3 {
+        font-size: 14px;
+      }
+
+      > h4 {
+        font-size: 15px;
+      }
+    }
+
+    .stories__info__stats {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+
+      span {
+        font-size: 15px;
+      }
+    }
+  }
+}

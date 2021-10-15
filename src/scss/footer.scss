@@ -1,0 +1,99 @@
+footer {
+  width: 60%;
+  margin: 0 20%;
+  display: grid;
+  grid-template: auto auto / 1fr 1fr 1fr;
+  grid-template-areas:
+    'info blogs instagram'
+    'bottom bottom bottom';
+  grid-gap: 40px;
+
+  #footer__info {
+    grid-area: info;
+
+    > h3 {
+      font-size: 46px;
+      color: #cccccc;
+    }
+
+    > h5 {
+      font-size: 15px;
+      color: #b1b1b1;
+    }
+
+    #footer__info__followers {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+
+      > h4 {
+        font-size: 18px;
+        margin: 0 4px 0 0;
+        padding: 0;
+      }
+
+      > span {
+        font-size: 14px;
+      }
+    }
+
+    #footer__info__follow {
+      > span {
+        font-style: italic;
+        color: #999999;
+      }
+    }
+
+    form {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      button {
+        background-color: #95e1d3;
+        color: white;
+        padding: 10px;
+      }
+    }
+  }
+
+  #footer__blogs {
+    grid-area: blogs;
+
+    > h4 {
+      font-size: 14px;
+    }
+
+    .footer__blogs__link {
+      > h5 {
+        font-size: 12px;
+      }
+
+      > h6 {
+        font-size: 13px;
+      }
+    }
+  }
+
+  #footer__instagram {
+    grid-area: instagram;
+
+    > h4 {
+      font-size: 14px;
+    }
+
+    button {
+      font-size: 13px;
+    }
+  }
+
+  > h4 {
+    grid-area: bottom;
+    font-size: 14px;
+    text-align: center;
+
+    span {
+      color: #f49f9f;
+    }
+  }
+}

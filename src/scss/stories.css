@@ -1,0 +1,15 @@
+#stories #stories__info {
+  display: grid;
+  grid-template: auto/1fr 1fr 1fr;
+}
+#stories #stories__info > div > h3 {
+  font-size: 14px;
+}
+#stories #stories__info > div > h4 {
+  font-size: 15px;
+}
+#stories #stories__info span {
+  font-size: 15px;
+}
+
+/*# sourceMappingURL=stories.css.map */

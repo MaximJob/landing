@@ -1,0 +1,30 @@
+#clients {
+  #clients__info {
+    display: grid;
+    grid-template: auto auto / 1fr 1fr;
+
+    > div {
+      display: grid;
+      grid-template: auto / 1fr 6fr;
+
+      .line {
+        margin: 0;
+      }
+
+      h3 {
+        text-align: left;
+        font-size: 14px;
+      }
+
+      h4 {
+        text-align: left;
+        font-size: 15px;
+      }
+
+      h6 {
+        text-align: left;
+        font-size: 15px;
+      }
+    }
+  }
+}
