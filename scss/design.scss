@@ -1,0 +1,33 @@
+#design {
+  padding-bottom: 0;
+  position: relative;
+  background: linear-gradient(rgba(230, 230, 230, 0.8), rgba(230, 230, 230, 0.8)), url("../assets/img/designBg.png") no-repeat center center;
+
+  #tablet {
+    width: 470px;
+    transition: all 0.2s;
+  }
+
+  #phone {
+    position: absolute;
+    left: calc(50% + 100px);
+    bottom: -60px;
+    width: 200px;
+    transition: all 0.2s;
+  }
+}
+
+@media (max-width: 600px) {
+  #design {
+    #tablet {
+      width: 360px;
+    }
+
+    #phone {
+      position: absolute;
+      left: calc(50% + 80px);
+      bottom: -40px;
+      width: 120px;
+    }
+  }
+}

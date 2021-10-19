@@ -1,0 +1,190 @@
+#ourWork {
+  padding-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
+
+  > div {
+    > h4, > h3, > h5 {
+      width: 60%;
+      margin-left: 20%;
+      margin-right: 20%;
+    }
+  }
+
+  #ourWork__info {
+    width: 100%;
+    display: grid;
+    grid-template: auto auto / 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+      'image1 image3 image5 image6'
+      'image2 image4 image5 image7';
+
+    .ourWork__info__image {
+      width: 100%;
+      height: 390px;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+
+      img, h3, h4 {
+        opacity: 0;
+        transition: all 0.2s;
+      }
+
+      img {
+        margin-bottom: 20px;
+      }
+
+      h3 {
+        font-size: 14px;
+        font-weight: 600;
+        color: white;
+      }
+
+      h4 {
+        font-size: 15px;
+        font-weight: 400;
+        font-style: italic;
+        color: white;
+      }
+    }
+
+    .ourWork__info__image:hover {
+      img, h3, h4 {
+        opacity: 1;
+        transition: all 0.2s;
+      }
+    }
+
+    #image1 {
+      grid-area: image1;
+      background: url("../assets/img/work1.png") no-repeat center center;
+    }
+
+    #image1:hover {
+      background: linear-gradient(rgba(244, 139, 130, 0.7), rgba(252, 227, 138, 0.8)), url("../assets/img/work1.png") no-repeat center center;
+    }
+
+    #image2 {
+      grid-area: image2;
+      background: url("../assets/img/work2.png") no-repeat center center;
+    }
+
+    #image2:hover {
+      background: linear-gradient(rgba(244, 139, 130, 0.7), rgba(252, 227, 138, 0.8)), url("../assets/img/work2.png") no-repeat center center;
+    }
+
+    #image3 {
+      grid-area: image3;
+      background: url("../assets/img/work3.png") no-repeat center center;
+    }
+
+    #image3:hover {
+      background: linear-gradient(rgba(244, 139, 130, 0.7), rgba(252, 227, 138, 0.8)), url("../assets/img/work3.png") no-repeat center center;
+    }
+
+    #image4 {
+      grid-area: image4;
+      background: url("../assets/img/work4.png") no-repeat center center;
+    }
+
+    #image4:hover {
+      background: linear-gradient(rgba(244, 139, 130, 0.7), rgba(252, 227, 138, 0.8)), url("../assets/img/work4.png") no-repeat center center;
+    }
+
+    #image5 {
+      height: 780px;
+      grid-area: image5;
+      background: url("../assets/img/work5.png") no-repeat center center;
+    }
+
+    #image5:hover {
+      background: linear-gradient(rgba(244, 139, 130, 0.7), rgba(252, 227, 138, 0.8)), url("../assets/img/work5.png") no-repeat center center;
+    }
+
+    #image6 {
+      grid-area: image6;
+      background: url("../assets/img/work6.png") no-repeat center center;
+    }
+
+    #image6:hover {
+      background: linear-gradient(rgba(244, 139, 130, 0.7), rgba(252, 227, 138, 0.8)), url("../assets/img/work6.png") no-repeat center center;
+    }
+
+    #image7 {
+      grid-area: image7;
+      background: url("../assets/img/work7.png") no-repeat center center;
+    }
+
+    #image7:hover {
+      background: linear-gradient(rgba(244, 139, 130, 0.7), rgba(252, 227, 138, 0.8)), url("../assets/img/work7.png") no-repeat center center;
+    }
+  }
+}
+
+@media (max-width: 1280px) {
+  #ourWork {
+    #ourWork__info {
+      display: grid;
+      grid-template: auto auto auto / 1fr 1fr 1fr;
+      grid-template-areas:
+      'image1 image3 image5'
+      'image2 image4 image5'
+      'image6 image7 image7';
+    }
+
+    > div {
+      > h4, > h3, > h5 {
+        width: 80%;
+        margin-left: 10%;
+        margin-right: 10%;
+      }
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  #ourWork {
+    > div {
+      > h4, > h3, > h5 {
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  #ourWork {
+    #ourWork__info {
+      display: grid;
+      grid-template: auto auto auto auto / 1fr 1fr;
+      grid-template-areas:
+      'image1 image5'
+      'image2 image5'
+      'image6 image7'
+      'image3 image4';
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  #ourWork {
+    #ourWork__info {
+      display: grid;
+      grid-template: repeat(8, auto) / 1fr;
+      grid-template-areas:
+      'image1'
+      'image2'
+      'image5'
+      'image5'
+      'image6'
+      'image7'
+      'image3'
+      'image4';
+    }
+  }
+}

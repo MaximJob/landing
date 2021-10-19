@@ -1,0 +1,237 @@
+footer {
+  background-color: #f8f8f8;
+  width: 100%;
+  padding: 60px 20% 0 20%;
+  display: grid;
+  grid-template: auto auto / 1fr 1fr 1fr;
+  grid-template-areas:
+    'info blogs instagram'
+    'bottom bottom bottom';
+  grid-gap: 40px;
+
+  #footer__info {
+    grid-area: info;
+
+    > h3 {
+      font-weight: 700;
+      font-size: 46px;
+      color: #cccccc;
+    }
+
+    > h5 {
+      margin-top: 30px;
+      font-size: 15px;
+      color: #b1b1b1;
+    }
+
+    #footer__info__followers {
+      margin: 40px 0 0 0;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      position: relative;
+
+      > h4 {
+        font-size: 18px;
+        margin: 0 4px 0 0;
+        padding: 0;
+      }
+
+      > span {
+        font-size: 14px;
+      }
+    }
+
+    #footer__info__followers::after {
+      content: '';
+      position: absolute;
+      bottom: -10px;
+      left: 0;
+      width: 100%;
+      height: 1px;
+      background-color: #cccccc;
+    }
+
+    #footer__info__follow {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      margin-top: 20px;
+
+      > span {
+        font-style: italic;
+        color: #999999;
+        margin-right: 6px;
+      }
+
+      > a {
+        margin: 0 4px;
+      }
+    }
+
+    form {
+      margin-top: 30px;
+      border: 1px solid #cccccc;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: white;
+
+      label, input {
+        width: 100%;
+        height: 100%;
+      }
+
+      input {
+        padding-left: 10px;
+      }
+
+      button {
+        font-size: 14px;
+        font-weight: 600;
+        background-color: #95e1d3;
+        color: white;
+        padding: 10px;
+      }
+    }
+  }
+
+  #footer__blogs {
+    grid-area: blogs;
+
+    > h4 {
+      font-size: 14px;
+      font-weight: 600;
+      margin-bottom: 40px;
+    }
+
+    .footer__blogs__link {
+      display: grid;
+      grid-template: auto auto / 140px 1fr;
+      grid-template-areas:
+              'image top'
+              'image bottom';
+      align-items: center;
+      justify-items: center;
+      grid-gap: 10px;
+      margin-bottom: 30px;
+
+      > img {
+        grid-area: image;
+        margin-right: auto;
+      }
+
+      > h5 {
+        width: 100%;
+        grid-area: top;
+        text-align: left;
+        font-size: 12px;
+        font-weight: 600;
+      }
+
+      > h6 {
+        width: 100%;
+        grid-area: bottom;
+        font-style: italic;
+        color: #b1b1b1;
+        font-weight: 400;
+        text-align: left;
+        font-size: 13px;
+      }
+    }
+  }
+
+  #footer__instagram {
+    grid-area: instagram;
+
+    > h4 {
+      font-weight: 600;
+      font-size: 14px;
+      margin-bottom: 40px;
+    }
+
+    > div {
+      display: grid;
+      grid-template: 88px 88px 88px / 88px 88px 88px;
+      grid-gap: 2px;
+      align-items: center;
+      justify-items: center;
+    }
+
+    button {
+      font-style: italic;
+      font-size: 13px;
+    }
+  }
+
+  #footer__end {
+    grid-area: bottom;
+    width: 100%;
+    border-top: 1px solid #cccccc;
+
+    > h4 {
+      margin: 20px 0;
+      font-size: 14px;
+      text-align: center;
+
+      a {
+        color: #f49f9f;
+      }
+    }
+  }
+}
+
+@media (max-width: 1280px) {
+  footer {
+    padding: 60px 10% 0 10%;
+    display: grid;
+    grid-template: auto auto / 1fr 1fr 1fr;
+    grid-template-areas:
+    'info blogs instagram'
+    'bottom bottom bottom';
+  }
+}
+
+@media (max-width: 1024px) {
+  footer {
+    padding: 60px 5% 0 5%;
+    display: grid;
+    grid-template: auto auto auto / 1fr 1fr;
+    grid-template-areas:
+    'blogs instagram'
+    'info info'
+    'bottom bottom';
+  }
+}
+
+@media (max-width: 768px) {
+  footer {
+    display: grid;
+    grid-template: auto auto auto auto / 1fr;
+    grid-template-areas:
+    'blogs'
+    'instagram'
+    'info'
+    'bottom';
+    grid-gap: 30px;
+
+    #footer__blogs {
+      width: 100%;
+
+      > h4 {
+        margin-bottom: 20px;
+      }
+
+      .footer__blogs__link {
+        grid-gap: 0;
+        margin-bottom: 20px;
+      }
+    }
+
+    #footer__instagram {
+      > h4 {
+        margin-bottom: 20px;
+      }
+    }
+  }
+}

@@ -1,0 +1,27 @@
+#story {
+  width: 60%;
+  margin: 0 20%;
+  padding: 90px 0 0 0;
+}
+
+#story h4 {
+  font-size: 24px;
+  text-align: center;
+}
+
+#story h3 {
+  font-size: 30px;
+  text-align: center;
+}
+
+#story h5 {
+  font-size: 15px;
+  text-align: center;
+  color: #999;
+}
+
+#story .line {
+  margin: 40px calc(50% - 30px) 50px calc(50% - 30px);
+}
+
+/*# sourceMappingURL=story.css.map */
